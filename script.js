@@ -236,6 +236,7 @@ function display() {
       boardContainer.classList.add("hide");
       nextButton.classList.add("hide");
       endMsg.classList.remove("hide");
+      scoreH3.classList.add("hide");
             
       console.log(index);
     }
