@@ -14,6 +14,7 @@ const restartBtn = document.querySelector(".restartBtn");
 const ilny = document.querySelector(".ilny");
 const scoreH3 = document.querySelector(".scoreH3");
 const questionTotal = document.querySelectorAll("question-total");
+const slogan = document.querySelector("#slogan");
 //const scoreCount = document.querySelector("#scoreCount")
 
 const questions = [
@@ -179,7 +180,7 @@ function startGame() {
    // embaralhar as cartas
   questions.sort(function (a, b) {
     return Math.random() - 0.5;
-    scoreH3.classList.remove("hide")
+   
   });
 
   answerBtn.forEach((button) => {
@@ -237,6 +238,7 @@ function display() {
       nextButton.classList.add("hide");
       endMsg.classList.remove("hide");
       scoreH3.classList.add("hide");
+      slogan.classList.add("hide");
             
       console.log(index);
     }
